@@ -180,6 +180,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     LatLng 社南里籃球場 = new LatLng(24.341066, 120.62919999999997);
     LatLng 臺中客家樂活園區樂活運動館 = new LatLng(24.341066, 120.62919999999997);
     LatLng 臺中市烏日全民運動館 = new LatLng(24.341066, 120.62919999999997);
+
     // create another arraylist for name for markers
     ArrayList<String> title = new ArrayList<String>();
     ArrayList<String> snippet = new ArrayList<String>();
@@ -353,6 +354,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         arrayList.add(社南里籃球場);
         arrayList.add(臺中客家樂活園區樂活運動館);
         arrayList.add(臺中市烏日全民運動館);
+
         //add title for marker in title arraylist
         title.add("大甲體育場");
         title.add("大甲區網球場");
@@ -489,6 +491,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         title.add("社南里籃球場");
         title.add("臺中客家樂活園區樂活運動館");
         title.add("臺中市烏日全民運動館");
+
         //add snippet for marker in snippet arraylist
         snippet.add("臺中市大甲區大安港路2號");
         snippet.add("臺中市大甲區東陽新村71-15號");
@@ -627,6 +630,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         snippet.add("臺中市烏日區新榮和段131 地號");
 
 
+
         nextPageBtn.setOnClickListener(new View.OnClickListener()
 
         {
@@ -704,11 +708,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
         //add marker to locations
         for(int i = 0;i< arrayList.size();i++){
-            //this loop is for adding markers
-            for(int j =0;j<title.size();j++){
-                //this loop is for setting title and snippet of marker
-                mMap.addMarker(new MarkerOptions().position(arrayList.get(i)).title(String.valueOf(title.get(j))).snippet(String.valueOf(snippet.get(j))));
-            }
+
+                mMap.addMarker(new MarkerOptions().position(arrayList.get(i)).title(title.get(i)).snippet(snippet.get(i)));
+
         }
         //add on click listener for marker on maps
 
