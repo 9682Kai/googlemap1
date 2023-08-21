@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/sportscomplex" android:title="綜合體育場"></item>
+    <item android:id="@+id/baseketball" android:title="籃球"></item>
+    <item android:id="@+id/football" android:title="足球"></item>
+
+</menu>

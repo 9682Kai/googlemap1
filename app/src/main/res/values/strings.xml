@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">球緣</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="todo">TODO</string>
+    <string name="button">Button</string>
+    <string name="text">歡迎使用球緣APP\n希望熱愛打球的你\n能在球緣找到自己的緣</string>
+
+    <string-array name="venue">
+        <item>綜合體育場</item>
+        <item>籃球</item>
+        <item>足球</item>
+    </string-array>
+</resources>
