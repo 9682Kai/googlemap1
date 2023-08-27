@@ -225,7 +225,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         ImageButton imagebutton1 = findViewById(R.id.imagebutton1);
         ImageButton imagebutton2 = findViewById(R.id.imagebutton2);
-        ImageButton imagebutton3 = findViewById(R.id.imagebutton3);
         ImageButton imagebutton4 = findViewById(R.id.imagebutton4);
 
         imagebutton1.setOnClickListener(new View.OnClickListener() {
@@ -244,14 +243,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
                 startActivity(intent);
             }
         });
-        imagebutton3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setClass(MapsActivity.this, PedometerActivity.class);
-                startActivity(intent);
-            }
-        });
+
         imagebutton4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

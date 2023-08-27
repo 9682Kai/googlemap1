@@ -29,7 +29,7 @@ public class Login extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Button nextPageBtn = (Button)findViewById(R.id.button2);
+       Button nextPageBtn = (Button)findViewById(R.id.button2);
 
         // [START config_signin]
         // Configure Google Sign In
